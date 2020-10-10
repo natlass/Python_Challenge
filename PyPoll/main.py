@@ -35,6 +35,13 @@ with open(csv_path, 'r', newline="") as csvfile:
 
         election[row[2]] = election[row[2]] + 1
 
+# Print total number of votes
+print(voter_id)
+
+#Print divider
+print("------------------")
+
+#Print individual vote tally for candidates by name
 print(election)
         
         
