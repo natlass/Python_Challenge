@@ -35,17 +35,18 @@ with open(csv_path, 'r', newline="") as csvfile:
 
         election[row[2]] = election[row[2]] + 1
 
-#Print election results
-print("Election Results")
-print("------------------")
+    #Print election results
+    print("Election Results")
+    print("------------------")
 
-# Print total number of votes
-print("Total number of votes:", voter_id)
-print("------------------")
+    # Print total number of votes
+    print("Total number of votes:", voter_id)
+    print("------------------")
 
-#Print individual vote tally for candidates by name
-print(election)
-print("------------------")
+    #Print individual vote tally for candidates by name
+    print(election)
+    print("------------------")
 
-        
-        
+    #Winner, winner
+    max_key = max(election, key=election.get)
+    print("Winner:", max_key)
