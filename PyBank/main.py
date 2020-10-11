@@ -12,7 +12,7 @@ with open(csv_path, 'r', newline="") as csvfile:
     if csv.Sniffer().has_header:
         next(csvreader)
     
-    #variables
+    #set your variables
     month = 0
     total_revenue = 0
     avgrevenuechange = 0
@@ -27,7 +27,11 @@ with open(csv_path, 'r', newline="") as csvfile:
 
     #Read each row of data after the header
     for row in csvreader:
+        
+        #Tally the months
         month = month + 1
+
+        #Set calculations for revenue changes
         total_revenue = total_revenue + int(row[1])
         revIncrease = int(row[1]) - prevRevenue
         total_rev_change = total_rev_change + revIncrease
