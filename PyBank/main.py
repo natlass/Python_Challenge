@@ -47,6 +47,7 @@ with open(csv_path, 'r', newline="") as csvfile:
 #Find avg revenue change, set demicals to 2
 avgrevenuechange = round(total_rev_change/month,2) 
 
+#Print statements for Financial Analysis
 print("Financial Analysis")
 print("------------------")
 print("Total Months: ", month)
