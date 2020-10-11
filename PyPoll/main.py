@@ -54,3 +54,17 @@ with open(csv_path, 'r', newline="") as csvfile:
     #Winner, winner
     max_key = max(election, key=election.get)
     print("Winner:", max_key)
+
+    # Print to text
+    with open("election.txt", "w") as text:
+        text.write('Election Results')
+        text.write('\n---------------')
+        text.write(f'\nTotal Votes: {voter_id}')
+        text.write(f'\n--------------')
+        text.write('election')
+        percentage = {}
+        for i in election:
+            percentage [i] = election [i]/voter_id
+        text.write('\npercentage')
+        text.write(f'\n--------------')
+        text.write(f'\nWinner: {winner}')
