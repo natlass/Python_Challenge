@@ -45,6 +45,10 @@ with open(csv_path, 'r', newline="") as csvfile:
 
     #Print individual vote tally for candidates by name
     print(election)
+    percentage = {}
+    for i in election:
+        percentage [i] = election [i]/voter_id
+    print(percentage)
     print("------------------")
 
     #Winner, winner
