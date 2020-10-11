@@ -44,6 +44,7 @@ with open(csv_path, 'r', newline="") as csvfile:
             max_dec_amt = revIncrease
             max_dec_date = row[0]
 
+#Find avg revenue change, set demicals to 2
 avgrevenuechange = round(total_rev_change/month,2) 
 
 print("Financial Analysis")
